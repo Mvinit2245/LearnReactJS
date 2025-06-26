@@ -1,7 +1,8 @@
 
 import './App.css';
 import Navbar from './components/Navbar';
-import TextForm from './components/TextForm';
+// import TextForm from './components/TextForm';
+import About from './components/About';
 
 function App() {
   return (
@@ -9,7 +10,9 @@ function App() {
     <>
     <Navbar title="TextUtils2" aboutText="About TextUtils"/>
      <div className="container my-3">
-    <TextForm heading="Enter the text that you want"/>
+    {/* <TextForm heading="Enter Text To Convert it into Upper or Lower Case"/> */}
+
+    <About/>
     </div>
     </>
     
