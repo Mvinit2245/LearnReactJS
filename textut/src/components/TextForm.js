@@ -37,10 +37,10 @@ export default function TextForm(props) {
 
   return (
     <>
-    <div className="container">
+    <div className="container" >
         <h1>{props.heading}</h1>
         <div className="mb-3">
-         <label for="myBox" className="form-label"></label>
+         <label htmlFor="myBox" className="form-label"></label>
          <textarea className="form-control" value={text} onChange={handleOnChange} id="exampleFormControlTextarea1" rows="7"></textarea>
          
       </div>
@@ -56,7 +56,7 @@ export default function TextForm(props) {
       <p>{text.split(" ").length} words and {text.length} characters</p>
       <p>{ 0.008 * text.split(" ").length}  Minutes read</p>
       <h2>Preview</h2>
-      <p>{text}</p>
+      <p>{text.length>0?text:"Enter Something to Preview the Text"}</p>
     </div>
     </>
   )
